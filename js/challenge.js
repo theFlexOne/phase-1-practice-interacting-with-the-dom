@@ -8,7 +8,6 @@ const pause = document.querySelector('#pause');
 const submit = document.querySelector('#submit');
 
 const likesList = document.querySelector('#likes');
-const pauseBtnLabel = pause.textContent;
 
 let counting = setInterval(() => counter.innerText++, 1000);
 
@@ -37,7 +36,7 @@ heart.addEventListener('click', () => {
 });
 
 pause.addEventListener('click', () => {
-  if (pause.textContent === btnLabel) {
+  if (pause.textContent === ' pause ') {
     clearInterval(counting);
     minus.disabled = true;
     plus.disabled = true;
